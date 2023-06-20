@@ -8,33 +8,47 @@
 
 import java.util.*;
 
-class GuessNumber {
+class GuessNumber0
+{
     // Adding a method to determine the guessed number(userNumber) with secret
     // number
 
-    public String determineNumber(int guessNumber, int userNumber, int count) {
-        if (guessNumber < 0 || guessNumber > 100) {
+    public String determineNumber(int guessNumber, int userNumber, int count) 
+    {
+        if (guessNumber < 0 || guessNumber > 100) 
+        {
             return "\nOops!!! Wrong Guess";
-        } else if (guessNumber == userNumber) {
+        } 
+        else if (guessNumber == userNumber) 
+        {
             return "\n Correct Guess!! You won \t Total Guesses: " + count;
-        } else if (guessNumber < userNumber) {
+        } 
+        else if (guessNumber < userNumber) 
+        {
             return "\n Your guess is too Low, try again.\t Try number: " + count;
-        } else if (guessNumber > userNumber) {
+        } 
+        else if (guessNumber > userNumber) 
+        {
             return "\n Your guess is too High, try again.\t Try number: " + count;
-        } else {
+        } 
+        else 
+        {
             return "\n Your guess is incorrect.\nTry number: " + count;
         }
     }
 }
 
-public class GuessNumberGame {
-    public static void main(String... args) {
+public class GuessNumberGame 
+{
+    public static void main(String... args) 
+    {
         Scanner sc = new Scanner(System.in);
         int userNumber = (int) (Math.random() * 100) + 1; // random number from 1 to 100
         int guessNumber = 0;
         GuessNumber g1 = new GuessNumber();
         int count = 1;
-        while (guessNumber != userNumber) {
+        while (guessNumber != userNumber) 
+        {
             System.out.println("-------------------------------------------");
             System.out.println("\nEnter your guess between 1 and 100: \n");
             System.out.println("-------------------------------------------");
