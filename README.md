@@ -1,1 +1,1 @@
-# OIBSIP_task2 - NumberGuessingGame
+# OIBSIP_task1 - NumberGuessingGame
